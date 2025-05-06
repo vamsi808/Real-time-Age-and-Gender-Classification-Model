@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detection Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Result</h1>
+    <img src="{{ url_for('static', filename=result_image) }}" alt="Detected Image">
+    <br><br>
+    <a href="/">← Back to Home</a>
+</body>
+</html>

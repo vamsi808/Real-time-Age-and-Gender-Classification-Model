@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Age and Gender Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Image for Age and Gender Detection</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" required>
+            <button type="submit">Upload & Detect</button>
+        </form>
+        <div class="nav-links">
+            <a href="/realtime">Switch to Realtime Detection</a>
+        </div>
+    </div>
+</body>
+</html>
